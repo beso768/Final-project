@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.eot');
+    src: url('../fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Raleway-Regular.woff2') format('woff2'),
+        url('../fonts/Raleway-Regular.woff') format('woff'),
+        url('../fonts/Raleway-Regular.ttf') format('truetype'),
+        url('../fonts/Raleway-Regular.svg#Raleway-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'test';
+    src: url('../fonts/BigShouldersStencilText-Regular.eot');
+    src: url('../fonts/BigShouldersStencilText-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BigShouldersStencilText-Regular.woff2') format('woff2'),
+        url('../fonts/BigShouldersStencilText-Regular.woff') format('woff'),
+        url('../fonts/BigShouldersStencilText-Regular.ttf') format('truetype'),
+        url('../fonts/BigShouldersStencilText-Regular.svg#BigShouldersStencilText-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
