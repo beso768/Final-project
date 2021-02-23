@@ -44,10 +44,24 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
-
+// scrollup function
 var scrollUp = document.getElementById ("up") ; 
 
 scrollUp.addEventListener ("click" , function () {
   window.scrollTo (0 , 0) ;
 })
+
+var burger = document.getElementById("burger") ;
+var back = document.getElementById("x");
+burger.addEventListener("click", function() {
+  document.getElementById("nav").style.right = "0"
+  // burger.style.display = "none"
+});
+
+back.addEventListener("click" , function() {
+  // burger.style.display = "block" ;
+  document.getElementById("nav").style.right = "-100%"
+}) ;
+
+
  

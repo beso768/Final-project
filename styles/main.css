@@ -2,11 +2,75 @@ body {
     font-family: 'Raleway';
     background: #202026;
 }
+.custom-motorcycles ,.service-box , .service-list, .mobile-nav , .mobile-nav li , .parent-div , .wrapper , .cart  , .categories , .product-list , .main-content{
+    display:flex;
+    width: 100%;
+}
+.burger-icon {
+    display: none;
+    cursor: pointer;
+}
+.burger-icon span {
+    display: none;
+    height: 4px ;
+    width:  30px;
+    border-radius: 8px;
+    background-color: burlywood;
+    margin: 0 0 10px;
+}
+.mobile-nav{
+    display: none;
+    position: fixed;
+    top: 0px;
+    background: rgb(0 0 0 / 83%);
+    right: -100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 100vh;
+    top: 0px;
+    transition:  0.7s ;
+}
+.mobile-nav ul{
+    display: flex;
+    flex-direction: column;
+    top: 68px;
+    position: absolute;
+    right: 47%;
+}
+.mobile-nav li {
+    color: #fff;
+    font-size: 30px;
+    flex-direction: column;
+    padding: 13% 0;
+}
+.burger-icon:hover .mobile-nav{
+    display: block;
+}
+.burger-icon .authentication{
+    position: absolute;
+    top: 303px;
+    right: 63%;
+}
+#x{
+    right: 0px;
+    position: absolute;
+    padding: 1px 34px;
+    cursor: pointer;
+}
+
+
+
+
+
+#container{
+    display: none;
+}
 header {
-    max-width: 1920px;
     width: 100%;
     margin: 0 auto;
-    padding: 10px 70px;
+    padding: 10px 4%;
     position: fixed;
     box-shadow: 0px 0px 16px 0px #ffffff75;
     backdrop-filter: blur(5px);
@@ -17,14 +81,12 @@ header {
     FONT-SIZE: 28px;
     font-family: 'Big Shoulders Stencil Text', cursive;
 }
-.logo a img {
-    margin-left: 13px;
-}
+
 ul , .list,  header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    filter: drop-shadow(2px 4px 6px black);
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.336));
 }
 nav a {
     color: #ffffff;
@@ -32,12 +94,44 @@ nav a {
     border-radius: 40px;
     padding: 5px 15px;
     transition: all  linear 0.2s ; 
+    font-weight: 700;
 }
 nav a:hover{
     box-shadow: 0 0 4px 2px white;
 }
-
+.authentication img{
+    filter: invert(1);
+    width: 37px;
+    margin-left: 16px;
+}
+.burger-menu {
+    display: none;
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    z-index: 4;
+    padding: 130px;
+    backdrop-filter: brightness(0.1);
+    right: -50px;
+    top: 52px;
+    transition: all  linear 0.2s ;
+}
+.burger-menu nav{
+    position: relative;
+}
+.burger-menu nav ul {
+    flex-direction: column;
+}
+.burger-menu nav li{
+    padding-bottom: 10px;
+}
+.burger-menu .authentication img{
+    position: relative;
+}
 /* slider */
+.slides {
+    position: relative;
+}
 .mySlides{
     position: relative;
     display: none;
@@ -50,22 +144,22 @@ nav a:hover{
 }
 .mySlides img{
     width: 100%;
-    max-height: 935px; 
+    height: 100%;
+    object-fit: cover;
 }
 .banner-text{
     display: flex;
     flex-direction: column;
     color: white;
     position: absolute;
-    bottom: 60%;
-    left: -2px;
-    backdrop-filter: brightness(0.9);
-    padding-left: 70px;
+    top: 26%;
+    backdrop-filter: brightness(0.7);
+    width: 100%;
 }
 .banner-text h2 {
     font-size: 100px;
-    width: 862px;
     backdrop-filter: blur(4px);
+    padding-left: 4%;
 }
 .banner-text p {
     padding: 20px 44px;
@@ -78,12 +172,13 @@ nav a:hover{
     width: 185px;
     height: 54px;
     border: 3px solid #007FB4;
-    margin-top: 12px;
+    margin: 12px 0 0 4%;
 }
 .dots {
     position: absolute;
     left: 50%;
-    top: 900px;
+    bottom: 82px;
+    transform: translateX(-50%);
 }
 .dot{
     display: inline-block;
@@ -121,28 +216,31 @@ nav a:hover{
     background-color: #757575;
     border: 2px solid #007FB4;
 }
-/* section 1 */
+/* about */
 .about {
-    background-image:url(../images/18e5f4_7d82d11a5ebe47248c8b42c730bc8bc7_mv2.webp);
+    background-image: url(../images/18e5f4_7d82d11a5ebe47248c8b42c730bc8bc7_mv2.webp);
     width: 100%;
-    background-color: #1a2125;
+    background-color: #1a212585;
+    padding: 1% 4%;
+    background-blend-mode: multiply;
     position: relative;
-    padding: 1% 2%;
-    background-blend-mode: hard-light;
+    top: 67px;
 }
 .background {
     background-image: url(../images/18e5f4_7d82d11a5ebe47248c8b42c730bc8bc7_mv2.webp);
     width: 100%;
-    height: 600px;
-    clip-path: polygon(60% 0%, 97% 0%, 75% 120%, 38% 120%);
+    height: 620px;
+    clip-path: polygon(69% 0%, 100% 0%, 78% 120%, 47% 120%);
     background-position: center;
     background-size: cover;
 }
 h3{
-    font-size: 50px;
-    padding-bottom: 16px;
-    color:white;
+    font-size: 70px;
+    padding-bottom: 4%;
+    color: #007fb4 ;
+    font-weight: bold;
 }
+
 .text-div {
     width: 96%;
     height: 90%;
@@ -150,30 +248,123 @@ h3{
     position: absolute;
     top: 31px;
     left: 30px;
-    padding: 21px 818px 0px 20px;
+    padding: 2% 53% 1% 2%;
     color: whitesmoke;
-    font-size: 22px;
+    font-size: 34px;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 21px;
     backdrop-filter: blur(55px);
 }
-/* section 3 */
-
-
-.products {
-    background-image: url(../images/background.jpg);
-    background-color: #1a2125;
-    background-blend-mode: soft-light;
+.recent-projects h3{
+    padding-left: 4%;
+}
+.recent-projects{
     width: 100%;
-    padding: 1% 2%;
-    background-color: #1a2125;
-    
+    background-color: #18181C;
+    padding: 2% 0% 7%;
+    margin: 7% 0% 0;
+}
+.projects{
+    display: flex;
+    width: 33.33%;
+    flex-direction: column;
+    min-width: 310px;
+}
+.project-hover{
+    position: absolute;
+    clip-path: polygon(0 59%, 33% 60%, 57% 86%, 0 86%);
+    backdrop-filter: blur(5px);
+    height: 425px;
+    width: 133%;
+    left: -3px;
+    transition: 0.2s;
+    background-color: #0000004a;
+}
+.model{
+    position: absolute;
+    bottom: 87px;
+    left: 16px;
+    width: 38%;
+    font-size: 37px;
+    color: #fefeff;
+}
+.projects:nth-child(1) .image{
+    background-image: url(../images/360621.jpg);
+}
+.projects:nth-child(1):hover .image{
+    background-image: url(../images/pexels-andrea-piacquadio-3855226.jpg);
+}
+.projects:nth-child(2) .image{
+    background-image: url(../images/360770.jpg);
+}
+.projects:nth-child(2):hover .image{
+    background-image: url(../images/MG_3278a-780x520.jpg);
+}
+.projects:nth-child(3) .image{
+    background-image: url(../images/itl.cat_cafe-racer-wallpaper_2364372.png);
+}
+.projects:nth-child(3):hover .image{
+    background-image: url(../images/dealers.jpg);
+}
+.dealers{
+    background-image: url(../images/dealers.jpg);
+    width: 48%;
+    background-size: cover;
+    background-position: center;
+}
+.service-list p{
+    color: white;
+    width: 48%;
+    padding: 2%;
+    font-size: 30px;
+}
+/* section 1-news */
+.news{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4%;
+    justify-content: space-around;
+    background-color: #202026;
+}
+.child-box{
+    width: 734px;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    margin-top: 4%;
+}
+.child-box {
+    width: 48%;
+    height: 70vh;
+    background-color: #928e8e4a;
+    background-blend-mode: multiply;
+    min-width: 450px;
+}
+.child-box p{
+    color: #e4e4e9;
+    font-size: 100px;
+    text-align: center;
+    padding-top: 7%;
+}
+.child-box span {
+    color: #E36E6E;
+}
+.child-box:nth-child(1) {
+    background-image:url(../images/best-vintage-motorcycle-helmets.jpg);
+}
+.child-box:nth-child(2) {
+    background-image:url(../images/b12960abe476862aff7247234fbe0eec.jpg);
+} 
+.main-block {
+    width: 100%;
+    background-color: #18181C;
+    padding: 2% 4%;
+    margin: 7% 0; 
 }
 .service-box {
-    display: flex;
     justify-content: space-between;
-    width: 100%;
     flex-wrap: wrap;
 }
 .image {
@@ -181,11 +372,11 @@ h3{
     position: relative;
     width: 100%;
     height: 400px;
-    border: 3px solid rgb(17 26 27);
     background-size: cover;
     background-position: center;
     transition: all 0.2s;
     overflow: hidden;
+    border-radius: 20px;
 }
 .services:nth-child(1) .image{
     background-image: url(../images/repair_motorcycle_hands_189488_1600x1200.jpg);
@@ -200,27 +391,29 @@ h3{
     background-image: url(../images/MG_3278a-780x520.jpg);
 }
 .services:nth-child(3) .image{
-    background-image: url(../images/BMW075_1024x1024.jpeg);
+    background-image: url(../images/engine.jpg);
 }
 .services:nth-child(3):hover .image{
-    background-image: url(../images/feature-min-670x448.jpg);
+    background-image: url(../images/dealers.jpg);
 }
 .services:nth-child(4) .image{
-    background-image: url(../images/helmet.png);
+    background-image: url(../images/painting.jpg);
     background-position: center;
 }
 .services:nth-child(4):hover .image{
-    background-image: url(../images/jacket.jpg);
+    background-image: url(../images/painting\ hover.jpg);
 }
 .image img {
     width: 100%;
     height: 300px;
+
 }
 .services {
     display: flex;
     width: 23%;
     flex-direction: column;
-    min-width: 310px;
+    min-width: 335px;
+    margin: 13px;
 }
 .image:hover {
     background-image: url(../images/pexels-rachel-claire-4577448.jpg);
@@ -265,52 +458,141 @@ h3{
 .text h3 {
     font-size: 70px
 }
-h3::after{
-    content: "";
-    display: block;
-    width: 100%;
-    height: 5px;
-    background-color: #01424a;
+/* custom-motorcycles */
+.custom-motorcycles{
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
 }
-/* section 5  */
+.right , .left{
+    width: 50%;
+    height: 75vh;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.7s;
+    min-width: 680px;
+    overflow: hidden;
+}
+.left:hover , .upper:hover , .lower:hover {
+    transform: scale(1.1);
+}
+.left{
+    background-image: url(../images/custom.jpg);
+    z-index: 1;
+}
+.upper , .lower{
+    height: 50%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.7s;
+}
+.upper{
+    background-image: url(../images/accessories.jpg);
+}
+.lower{
+    background-image: url(../images/parts.jpg);
+}
+.custom-motorcycles p {
+    color: #007FB4;
+    font-size: 70px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    text-align: center;
+    width: 94%;
+    backdrop-filter: brightness(0.5);
+}
+/* products */
+.products {
+    min-width: 350px;
+    width: 30%;
+    background-color: #ffffff1a;
+    margin: 0 17px 16px 0;
+}
+.products p {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+.product-image {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.2s;
+    overflow: hidden;
+}
+.products:nth-child(1) .product-image{
+    background-image: url(../images/helmet.png);
+}
+.products:nth-child(1):hover .product-image{
+    background-image: url(../images/AGV-RP60-Royal-Helmet.jpg);
+}
+.products:nth-child(2) .product-image{
+    background-image: url(../images/jacket1.png);
+}
+.products:nth-child(2):hover .product-image{
+    background-image: url(../images/jacket.jpg);
+}
+.products:nth-child(3) .product-image{
+    background-image: url(../images/products-1.png);
+}
+.products:nth-child(3):hover .product-image{
+    background-image: url(../images/gloves2.jpg);
+}
+/* contact  */
 .contact {
     background-image: url(../images/pexels-sourav-mishra-2317408.jpg);
     width: 100%;
-    background-color: #1a2125;
-    padding: 1% 2%;
+    background-color: #1a212557;
     background-size: cover;
     background-blend-mode: difference;
+    background-attachment: fixed;
 }
 .content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 input ,textarea{
-    width: 290px;
+    width: 100%;
     height: 60px;
-    margin: 0 20px 20px 0;
-    background-color: #f8f8f815;
-    border: 1px solid #E8E8E8;
-    color: white;
+    margin: 11px 20px 1px 0;
+    background-color: #f8f8f812;
+    border: none;
     font-size: 21px;
-    outline: none;
+    backdrop-filter: blur(13px);
 }
-.flex-wrap {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 625px;
+.forms{
+    width: 50%;
+    padding: 2% 4%;
+    padding-right: 9%;
+    min-width: 433px;
+
 }
 .description {
-    width: 604px;
+    width: 100%;
     height: 143px;
 }
 .map{
-    width: 70%;
+    width: 48%;
 }
+.input-background {
+    padding: 20px;
+}
+
+.labels {
+    font-size: 27px;
+    color: white;
+}
+/* footer  */
 footer {
     width: 100%;
-    background-color: #1a2125;
+    background-color: #18181C;
     color: white;
 }
 button:focus {
@@ -321,58 +603,12 @@ button p {
     font-size: 14px;
     margin-right: 5px;
 }
-footer ul{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 10px 0 10px 0;
+.icon {
+    padding: 2px;
 }
-footer li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+.icon img {
+    width: 17%;
 }
-footer li h6 {
-    padding: 10px 0;
-}
-footer li p {
-    color:#929292;
-}
-footer button {
-    background-color: #c3c7ff00;
-    background-image: url(../images/icons/facebook-brands.svg);
-    border-radius: 59px;
-    width: 30px;
-    height: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-    border: none;
-    margin: 5px;
-}
-footer ul li:nth-child(2) button{
-    background-image: url(../images/icons/instagram-brands.svg);
-}
-footer ul li:nth-child(3) button{
-    background-image: url(../images/icons/phone.png);
-}
-footer ul li:nth-child(4) button{
-    background-image: url(../images/icons/map-pin.png);
-}
-footer ul li:nth-child(5) button    {
-        background-image: url(../images/icons/mail.png);
-}
-
 .footerDiv{
     display: flex;
     justify-content: space-between;
@@ -446,53 +682,138 @@ footer ul li:nth-child(5) button    {
     box-shadow: 1px -20px 20px 0px rgb(255 255 255 / 50%);
     overflow: hidden;
 }
-
-.loader-images {
-    position: relative;
-    width: 299px;
-    height: 300px;
-    border: 1px solid;
+/* .products-page */
+.product-page{
+    margin: 0;
+    padding: 7% 4%;
 }
-.loader-images img {
-    width: 80px;
-    position: absolute;
-    top: -300px;
-    animation: Slide 5s infinite;
+/* product-list */
+.wrapper{
+    padding: 8% 4%;
 }
-.loader-images img:nth-child(1){
-    animation-delay: 0s;
-}
-.loader-images img:nth-child(2){
-    animation-delay: 1s;
-}
-.loader-images img:nth-child(3){
-    animation-delay: 2s;
-}
-.loader-dots {
-    position: relative;
+.categories-filter{
     width: 30%;
-    height: 32px;
-    padding: 12px;
-    border: 2px solid;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 2%;   
+}
+.categories-filter h4{
+    font-size: 55px;
+}
+.categories-filter p{
+    padding: 2% 0;
+    font-size: 50px;
+}
+.right-block{
+    width: 70%;
+}
+.price-filter{
+    position: relative;
+    width: 100%;
+    left: 575px;
+    color: white;
+}
+.product-list{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.item{
+    width: 272px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #18181c;
+    position: relative;
+    height: 347px;
+    margin: 20px 6px;
+    border-radius: 20px;
     overflow: hidden;
-    border-radius: 50px;
+    box-shadow: 1px 1px 12px 0px bla
 }
-.loader-dots span {
+.item h4{
+    margin: 11px;
+    font-size: 20px;
+}
+.item p{
+    margin: 0px 11px;
+    font-size: 19px;
+}
+
+.discount{
+    height: 237px;
+    clip-path: polygon(0 0, 70% 0, 47% 14%, 0 14%);
+    width: 100%;
+    background-color: #5757ff;
     position: absolute;
-    width: 25px;
-    height: 25px;
-    background-color: white;
-    border-radius: 50%;
-    animation: dots 3s infinite;
+    background-color: #61b5ff;
 }
-.loader-dots span:nth-child(1){
-    animation-delay: 0s;
+span{
+    text-decoration: line-through;
+    color: white;
 }
-.loader-dots span:nth-child(2){
-    animation-delay: 1s;
+.photo{
+    width: 100%;
 }
-.loader-dots span:nth-child(3){
-    animation-delay: 2s;
+.basket{
+    width: 23px;
+    color: white;
+    filter: invert(1);
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.main-content{
+    padding: 8% 4% 0;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+}
+.image-side{
+    width: 50%;
+}
+.description-side{
+    width: 50%;
+    padding-left: 5%;
+}
+.for-image{
+    width: 80%;
+}
+.title{
+    color: #ffffff;
+}
+.description-side p{
+    display: inline-block;
+    font-weight: 500;
+}
+.description-side h4{ 
+    padding: 18px 0;
+    font-size: 50px;
+}
+.cart{
+    background-color: #0000001f;
+    font-size: 22px;
+    color: white;
+    width: 229px;
+    height: 55px;
+    border: 3px solid #007FB4;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+.description-side img{
+    width: 30px;
+    filter: invert(1);
+}
+#size{
+    width: 20px;
+    height: 30px;
+    margin-left: 35px;
+}
+.related-products h3{
+    padding-bottom: 4%;
+    color: #cecece;
+    text-align: center;
 }
 @keyframes rotate {
     from {
@@ -516,17 +837,6 @@ footer ul li:nth-child(5) button    {
         top:300px;
     }
 }
-@keyframes dots {
-    0% {
-        left: 0px;
-    }
-    50% {
-        left: 50%;
-    }
-    100% {
-        left: 100%;
-    }
-}
   @keyframes fade{
     from{
         filter: brightness(0);
@@ -536,5 +846,32 @@ footer ul li:nth-child(5) button    {
     }
 }
 
+@media (max-width: 1400px){
+    .right, .left{
+        width: 100%;
+    }
+    .service-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .products{
+        width: 50%;
+    }
+}
 
-
+@media (max-width: 1024px) {
+    
+}
+@media (max-width: 900px){
+    .services{
+        width: 90%;
+        min-width: 100px;
+    }
+    .authentication , nav{
+        display: none;
+    }
+    .burger-icon , .mobile-nav{
+        display: block;
+    }
+    
+} 

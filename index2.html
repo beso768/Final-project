@@ -3,36 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- seo meta tags -->
-     <meta name="description" content="Homepage">
-     <meta name="keywords" content="Motorcycle shop,Motorcycle service">
-     <meta name="author" content="Beso Gigashvili">
-     <!-- facebook  meta tags -->
-     <meta property="og:url"                content="" />
-     <meta property="og:type"               content="Project" />
-     <meta property="og:title"              content="Motorcycle service" />
-     <meta property="og:description"        content="Final Project" />
-     <meta property="og:image"              content="images/icons/" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="java/app.js" defer></script>
+    <!-- seo meta tags -->
+    <meta name="description" content="Homepage">
+    <meta name="keywords" content="Motorcycle shop,Motorcycle service">
+    <meta name="author" content="Beso Gigashvili">
+    <!-- facebook  meta tags -->
+    <meta property="og:url"                content="" />
+    <meta property="og:type"               content="Project" />
+    <meta property="og:title"              content="Motorcycle service" />
+    <meta property="og:description"        content="Final Project" />
+    <meta property="og:image"              content="images/icons/" />
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/font.css">
     <link rel="stylesheet" href="styles/main.css">
-    <title>Project</title>
+    <title>Homepage</title>
 </head>
 <body>
-  <section>
-    <div class="about">
-        <div class="text-div">
-            <h3>About</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt obcaecati voluptatum magni cum facere quas, esse officia, adipisci ut dolorem, et suscipit temporibus expedita sed dolor? Recusandae asperiores reiciendis sapiente.
-            Pariatur similique culpa harum blanditiis nostrum consequatur nam cupiditate assumenda voluptas facilis repellat iusto consectetur eius autem rem sit iure quaerat, quisquam est cumque asperiores beatae. Libero doloremque accusamus recusandae.
-            Odit, natus. Fuga nostrum quasi asperiores? Reprehenderit consequatur modi accusamus adipisci vel, quos consectetur beatae impedit rem iusto omnis quod illum reiciendis. Nemo commodi fugiat consequatur! Ullam, itaque repellat. Nulla!
-            </p>
+    <div id="loader">
+        <img class="loaderlogo" src="images/icons/logo.png" alt="logo">
+        <div class="circle"> 
+          <div class="rotate"> </div>
         </div>
-        <div class="background">
+    </div> 
+    <div id="container">
+    <header>
+        <div class="logo">
+            <a href="#"><img src="images/icons/logo.png" alt="logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="index2.html">Products</a></li>
+                <li><a href="index3.html">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="authentication">
+            <img src="images/icons/user-circle-solid.svg" alt="personalPage">
+            <img src="images/icons/shopping-cart.svg" alt="shopping-cart">
+        </div> 
+        <!-- <div class="burger-icon">
+            <div class="menu">
+                <img src="images/icons/Group 47.png" alt="burger">
+                <div class="mobile-nav">
+                    <ul>
+                        <li><a  class="navbar-li" href="index.html">Homepage</a></li>
+                        <li><a  class="navbar-li" href="index2.html">Products</a></li>
+                        <li><a  class="navbar-li" href="index3.html">About Us</a></li>
+                    </ul>
+                    <div class="authentication">
+                        <img src="images/icons/user-circle-solid.svg" alt="personalPage">
+                        <img src="images/icons/shopping-cart.svg" alt="shopping-cart">
+                    </div> 
+                </div>
+            </div> -->
+    </header>
+    <div class="main-block product-page">
+        <h3>Products</h3>
+        <div class="service-box">
+            <a href="index4.html" class="products">
+                <div class="product-image">
+                    <div class="hover"> </div> 
+                </div>
+                <p> Helmets </p>
+            </a>
+            <a href="index4.html" class="products">
+                <div class="product-image">
+                    <div class="hover"></div>
+                </div>     
+                <p> jackets </p>
+            </a>
+            <a href="index4.html" class="products">
+                <div class="product-image">
+                    <div class="hover"> </div>
+                </div>     
+                <p> Gloves </p>
+            </a>
         </div>
     </div>
-</section>
+    <footer>
+        <div class="footerDiv">
+            <div> 
+                <p> © 2021 Terminal. All right reserved. </p>
+                <a href="#">Terms & conditions     Privacy policy</a>
+            </div>
+            <div>  
+                <a href="#" class="icon"><img src="images/icons/facebook.svg" alt="facebok"></a>
+                <a href="#" class="icon"><img src="images/icons/instagram.svg" alt="instagram"></a>
+                <a href="#" class="icon"><img src="images/icons/mobile.svg" alt="mobile"></a>
+                <a href="#" class="icon"><img src="images/icons/mail.svg" alt="mail"></a>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="java/app.js" defer></script>
 </body>
 </html>
