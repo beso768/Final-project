@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="styles/font.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <title>Project</title>
+    <title>About</title>
 </head>
 <body>
     <div id="loader">
@@ -42,42 +42,21 @@
                 <img src="images/icons/user-circle-solid.svg" alt="personalPage">
                 <img src="images/icons/shopping-cart.svg" alt="shopping-cart">
             </div> 
-            <div class="burger-icon">
-                <div class="menu">
-                    <img src="images/icons/Group 47.png" alt="burger">
-                    <div class="mobile-nav">
-                        <ul>
-                            <li><a  class="navbar-li" href="index.html">Homepage</a></li>
-                            <li><a  class="navbar-li" href="index2.html">Products</a></li>
-                            <li><a  class="navbar-li" href="index3.html">About Us</a></li>
-                        </ul>
-                        <div class="authentication">
-                            <img src="images/icons/user-circle-solid.svg" alt="personalPage">
-                            <img src="images/icons/shopping-cart.svg" alt="shopping-cart">
-                        </div> 
-                    </div>
-                </div>
-            </div>
-            <!-- <div id="burgerIcon" onclick="burgerMenu()">
-                <img src="images/icons/Group 47.png" alt="burger">
-                <div class="burger-menu">
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">Homepage</a></li>
-                            <li><a href="index2.html">Products</a></li>
-                            <li><a href="index3.html">About Us</a></li>
-                        </ul>
-                    </nav>
-                    <div class="authentication">
+            <div class="burger-icon" id="burger">
+                <img src="images/icons/Group 47.png" alt="burger"> 
+            </div>    
+                <div class="mobile-nav" id="nav">
+                    <img id="x" src="images/icons/Group 26.png" alt="x">
+                    <ul>
+                        <li><a  class="navbar-li" href="index.html">Homepage</a></li>
+                        <li><a  class="navbar-li" href="index2.html">Products</a></li>
+                        <li><a  class="navbar-li" href="index3.html">About Us</a></li>
+                    </ul>
+                    <div class="authentication mobile-authentication">
                         <img src="images/icons/user-circle-solid.svg" alt="personalPage">
                         <img src="images/icons/shopping-cart.svg" alt="shopping-cart">
-                    </div>
+                    </div> 
                 </div>
-            </div>
-            <div class="authentication">
-                <img src="images/icons/user-circle-solid.svg" alt="personalPage">
-                <img src="images/icons/shopping-cart.svg" alt="shopping-cart">
-            </div> -->
         </header>
     <!-- about     -->
         <div class="about">
@@ -136,7 +115,7 @@
                     <p> © 2021 Terminal. All right reserved. </p>
                     <a href="#">Terms & conditions     Privacy policy</a>
                 </div>
-                <div>  
+                <div class="footer-icons">  
                     <a href="#" class="icon"><img src="images/icons/facebook.svg" alt="facebok"></a>
                     <a href="#" class="icon"><img src="images/icons/instagram.svg" alt="instagram"></a>
                     <a href="#" class="icon"><img src="images/icons/mobile.svg" alt="mobile"></a>
@@ -151,6 +130,13 @@
 
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="java/app.js" defer></script>
+    <script src="javascript/app.js" defer></script>   
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 400 ,
+            duration: 1500 ,
+    });
+    </script>
 </body>
 </html>

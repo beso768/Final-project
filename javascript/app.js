@@ -4,20 +4,30 @@ window.addEventListener("load", function () {
   loader.style.display = "none" ;
   container.style.display = "block" ;
 }) ;
+// burger menu 
+var burger = document.getElementById("burger") ;
+var back = document.getElementById("x");
+burger.addEventListener("click", function() {
+  document.getElementById("nav").style.right = "0"
+});
 
-// var myIndex = 0;
-// carousel();
-// function carousel() {
-//   var i;
-//   var x = document.getElementsByClassName("mySlides");
-//   for (i = 0; i < x.length; i++) {
-//     x[i].style.display = "none";  
-//   }
-//   myIndex++;
-//   if (myIndex > x.length) {myIndex = 1} ;   
-//   x[myIndex-1].style.display = "block";  
-//   setTimeout(carousel, 20000);    
-// }
+back.addEventListener("click" , function() {
+  document.getElementById("nav").style.right = "-100%"
+}) ;
+
+var myIndex = 0;
+carousel();
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1} ;   
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 20000);    
+}
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -49,19 +59,7 @@ var scrollUp = document.getElementById ("up") ;
 
 scrollUp.addEventListener ("click" , function () {
   window.scrollTo (0 , 0) ;
-})
-
-var burger = document.getElementById("burger") ;
-var back = document.getElementById("x");
-burger.addEventListener("click", function() {
-  document.getElementById("nav").style.right = "0"
-  // burger.style.display = "none"
 });
-
-back.addEventListener("click" , function() {
-  // burger.style.display = "block" ;
-  document.getElementById("nav").style.right = "-100%"
-}) ;
 
 
  

@@ -22,7 +22,7 @@ body {
     display: none;
     position: fixed;
     top: 0px;
-    background: rgb(0 0 0 / 83%);
+    background: rgb(0 0 0 / 98%);
     right: -100%;
     justify-content: center;
     align-items: center;
@@ -37,13 +37,14 @@ body {
     flex-direction: column;
     top: 68px;
     position: absolute;
-    right: 47%;
+    right: 30%;
 }
 .mobile-nav li {
     color: #fff;
     font-size: 30px;
     flex-direction: column;
     padding: 13% 0;
+    border-bottom: 1px solid white;
 }
 .burger-icon:hover .mobile-nav{
     display: block;
@@ -52,6 +53,12 @@ body {
     position: absolute;
     top: 303px;
     right: 63%;
+}
+.mobile-authentication{
+    display: block;
+    top: 313px;
+    position: absolute;
+    right: 32%;
 }
 #x{
     right: 0px;
@@ -153,8 +160,10 @@ nav a:hover{
     color: white;
     position: absolute;
     top: 26%;
-    backdrop-filter: brightness(0.7);
+    backdrop-filter: brightness(0.6);
     width: 100%;
+    border-top: 2px solid #ffffff8f;
+    border-bottom: 2px solid #ffffff8f;
 }
 .banner-text h2 {
     font-size: 100px;
@@ -228,7 +237,7 @@ nav a:hover{
 }
 .background {
     background-image: url(../images/18e5f4_7d82d11a5ebe47248c8b42c730bc8bc7_mv2.webp);
-    width: 100%;
+    width: 90%;
     height: 620px;
     clip-path: polygon(69% 0%, 100% 0%, 78% 120%, 47% 120%);
     background-position: center;
@@ -242,7 +251,7 @@ h3{
 }
 
 .text-div {
-    width: 96%;
+    width: 95%;
     height: 90%;
     background-color: #9e9e9e3b;
     position: absolute;
@@ -250,7 +259,7 @@ h3{
     left: 30px;
     padding: 2% 53% 1% 2%;
     color: whitesmoke;
-    font-size: 34px;
+    font-size: 32px;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 21px;
@@ -269,7 +278,6 @@ h3{
     display: flex;
     width: 33.33%;
     flex-direction: column;
-    min-width: 310px;
 }
 .project-hover{
     position: absolute;
@@ -318,6 +326,7 @@ h3{
     width: 48%;
     padding: 2%;
     font-size: 30px;
+    font-weight: bold;
 }
 /* section 1-news */
 .news{
@@ -328,28 +337,23 @@ h3{
     justify-content: space-around;
     background-color: #202026;
 }
-.child-box{
-    width: 734px;
-    background-size: cover;
-    background-position: center;
-    height: 70vh;
-    margin-top: 4%;
-}
 .child-box {
     width: 48%;
-    height: 70vh;
-    background-color: #928e8e4a;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-color: #928e8e;
     background-blend-mode: multiply;
     min-width: 450px;
+    margin-top: 4%;
+    cursor:pointer;
 }
 .child-box p{
     color: #e4e4e9;
     font-size: 100px;
     text-align: center;
     padding-top: 7%;
-}
-.child-box span {
-    color: #E36E6E;
+    font-weight: bold;
 }
 .child-box:nth-child(1) {
     background-image:url(../images/best-vintage-motorcycle-helmets.jpg);
@@ -357,11 +361,17 @@ h3{
 .child-box:nth-child(2) {
     background-image:url(../images/b12960abe476862aff7247234fbe0eec.jpg);
 } 
+.child-box:nth-child(2) p{
+    padding-bottom: 25%;
+}
 .main-block {
     width: 100%;
     background-color: #18181C;
     padding: 2% 4%;
     margin: 7% 0; 
+}
+.main-block::-webkit-scrollbar{
+    display: none;
 }
 .service-box {
     justify-content: space-between;
@@ -412,8 +422,10 @@ h3{
     display: flex;
     width: 23%;
     flex-direction: column;
-    min-width: 335px;
     margin: 13px;
+}
+.product-scroll .services{
+    min-width: 321px;
 }
 .image:hover {
     background-image: url(../images/pexels-rachel-claire-4577448.jpg);
@@ -431,13 +443,12 @@ h3{
 .hover {
     position: absolute;
     clip-path: polygon(0 64%, 38% 64%, 54% 86%, 0 86%);
-    backdrop-filter: blur(5px);
     height: 100%;
     width: 100%;
     padding: 8% 71% 80% 9%;
     left: -300px;
     transition: 0.2s;
-    background-color: #0000004a;
+    background-color: #00000080;
 }
 .hover p {
     position: absolute;
@@ -470,7 +481,6 @@ h3{
     background-size: cover;
     background-position: center;
     transition: transform 0.7s;
-    min-width: 680px;
     overflow: hidden;
 }
 .left:hover , .upper:hover , .lower:hover {
@@ -502,12 +512,12 @@ h3{
     transform: translate(-50%, -50%);
     position: relative;
     text-align: center;
-    width: 94%;
     backdrop-filter: brightness(0.5);
+    width: 100%;
+    font-weight: bold;
 }
 /* products */
 .products {
-    min-width: 350px;
     width: 30%;
     background-color: #ffffff1a;
     margin: 0 17px 16px 0;
@@ -566,6 +576,7 @@ input ,textarea{
     border: none;
     font-size: 21px;
     backdrop-filter: blur(13px);
+    padding: 12px;
 }
 .forms{
     width: 50%;
@@ -770,14 +781,14 @@ span{
     font-weight: bold;
 }
 .image-side{
-    width: 50%;
+    width: 40%;
 }
 .description-side{
     width: 50%;
     padding-left: 5%;
 }
 .for-image{
-    width: 80%;
+    width: 100%;
 }
 .title{
     color: #ffffff;
@@ -815,6 +826,59 @@ span{
     color: #cecece;
     text-align: center;
 }
+.product-scroll{
+    display: flex;
+    overflow-x: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.helmets {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.2s;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.services:nth-child(1) .helmets {
+    background-image: url(../images/AGV-RP60-Royal-Helmet.jpg);
+}
+.services:nth-child(2) .helmets {
+    background-image: url(../images/agvk3_sv_sakura_helmet_white_purple_750x750.jpg);
+}
+.services:nth-child(3) .helmets {
+    background-image: url(../images/1.jpg);
+}
+.services:nth-child(4) .helmets {
+    background-image: url(../images/agvk3_sv_sakura_helmet_white_purple_750x750.jpg);
+}
+.services:nth-child(5) .helmets {
+    background-image: url(../images/AGV-RP60-Royal-Helmet.jpg);
+}
+.services:nth-child(6) .helmets {
+    background-image: url(../images/agvk3_sv_sakura_helmet_white_purple_750x750.jpg);
+}
+.services:nth-child(7) .helmets {
+    background-image: url(../images/1.jpg);
+}
+.services:nth-child(8) .helmets {
+    background-image: url(../images/agvk3_sv_sakura_helmet_white_purple_750x750.jpg);
+}
+
+
+.product-scroll::-webkit-scrollbar {
+    width: 1px;
+    height: 2px;
+}
+.product-scroll::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+.product-scroll::-webkit-scrollbar-thumb {
+    background: #007fb4;
+}
 @keyframes rotate {
     from {
         transform: rotate(0deg);
@@ -845,33 +909,148 @@ span{
         filter: brightness(1);
     }
 }
-
-@media (max-width: 1400px){
+@media (max-width: 1570px){
+    .services{
+        width: 40%;
+    }
     .right, .left{
         width: 100%;
     }
-    .service-box {
+    
+    .background{
+        background-image: unset;
+    }
+    .text-div{
+        font-size: 38px;
+        padding: 2%;
+    }
+    .banner-text h2{
+        font-size:60px ;
+    }
+}
+@media (max-width: 1200px){
+    .product {
         flex-direction: column;
         align-items: center;
     }
-    .products{
-        width: 50%;
+    .wrapper{
+        flex-direction: column;
     }
-}
-
-@media (max-width: 1024px) {
+    .right-block {
+        width: 100%;
+    }
     
 }
-@media (max-width: 900px){
+@media (max-width: 930px){
     .services{
-        width: 90%;
-        min-width: 100px;
+        width: 100%;
     }
     .authentication , nav{
         display: none;
     }
+    .mobile-authentication{
+        display: block;
+    }
     .burger-icon , .mobile-nav{
         display: block;
     }
+    .text-div{
+        font-size: 35px;
+        width: 93%;
+        height: auto;
+    }
+    .about {  
+        background-size: cover;
+        
+    }
+    .projects{
+        width: 100%;
+    }
     
-} 
+    .map{
+        width:100%
+    }
+    .forms{
+        width: 100%;
+        min-width: 0;
+    }
+    .footer-icons{
+        padding: 20px 0 20px 38px
+    }
+    .custom-motorcycles p{
+        font-size: 45px;
+    }
+    .product {
+        flex-direction: column;
+        align-items: center;
+    }
+    .products{
+        width: 100%;
+    }
+    .service-list{
+        background-image: url(../images/dealers.jpg);
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-color: #202026d6;
+        background-blend-mode: darken;
+        display: flex;
+        justify-content: center;
+    }
+    .service-list p{
+        width: 100%;
+        padding: 4%;
+    }
+    .dealers{
+        display: none;
+    }
+    
+    
+}
+@media (max-width: 736px){
+    .text-div{
+        font-size: 25px;
+        width: 89%;
+    }
+    .recent-projects{
+        margin: 20% 0% 0;
+    }
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-side {
+        width: 100%;
+    }
+    .description-side {
+        width: 100%;
+        padding: 3% 1%;
+    }
+    .description-side h4 {
+        font-size: 30px;
+    }
+}
+/* galaxy fold  */
+@media (max-width: 400px){
+    .child-box{
+        width: 100%;
+        min-width: 0;
+    }
+    .child-box p{
+        font-size: 46px;
+    }
+    .main-block h3{    
+        font-size: 40px;
+    }
+    .banner-text h2 {
+        font-size: 50px;
+    }
+    .text-div {
+        font-size: 21px;
+        width: 87%;
+    }
+    .recent-projects h3{
+        font-size: 50px;
+    }
+}
+

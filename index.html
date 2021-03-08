@@ -12,8 +12,8 @@
     <meta property="og:type"               content="Project" />
     <meta property="og:title"              content="Motorcycle service" />
     <meta property="og:description"        content="Final Project" />
-    <meta property="og:image"              content="images/icons/" />
-    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@700&display=swap" rel="stylesheet">
+    <meta property="og:image"              content="images/" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/font.css">
     <link rel="stylesheet" href="styles/main.css">
@@ -43,24 +43,21 @@
             <img src="images/icons/shopping-cart.svg" alt="shopping-cart">
         </div> 
         <div class="burger-icon" id="burger">
-                <img src="images/icons/Group 47.png" alt="burger"> 
+            <img src="images/icons/Group 47.png" alt="burger"> 
         </div>    
-                <div class="mobile-nav" id="nav">
-                    <img id="x" src="images/icons/Group 26.png" alt="x">
-                    <ul>
-                        <li><a  class="navbar-li" href="index.html">Homepage</a></li>
-                        <li><a  class="navbar-li" href="index2.html">Products</a></li>
-                        <li><a  class="navbar-li" href="index3.html">About Us</a></li>
-                    </ul>
-                    <div class="authentication">
-                        <img src="images/icons/user-circle-solid.svg" alt="personalPage">
-                        <img src="images/icons/shopping-cart.svg" alt="shopping-cart">
-                    </div> 
-                </div>
-            
-        
+            <div class="mobile-nav" id="nav">
+                <img id="x" src="images/icons/Group 26.png" alt="x">
+                <ul>
+                    <li><a  class="navbar-li" href="index.html">Homepage</a></li>
+                    <li><a  class="navbar-li" href="index2.html">Products</a></li>
+                    <li><a  class="navbar-li" href="index3.html">About Us</a></li>
+                </ul>
+                <div class="authentication mobile-authentication">
+                    <img src="images/icons/user-circle-solid.svg" alt="personalPage">
+                    <img src="images/icons/shopping-cart.svg" alt="shopping-cart">
+                </div> 
+            </div>
     </header>
-    
     <!--section 1 -->
     <div class="slides">
         <div class="mySlides">
@@ -106,8 +103,8 @@
     </div>
     <!-- news -->
     <div class="news">
-        <div class="child-box"><p>Save Up To <span> 50% </span>On Fullface Helmets</p></div>
-        <div class="child-box"><p> Winter Clothing & Gear</p></div>
+        <div class="child-box" data-aos="fade"><p>Save Up To 50% On Fullface Helmets</p></div>
+        <div class="child-box" data-aos="fade"><p> Winter Clothing & Gear</p></div>
     </div>
         
         <!-- service -->
@@ -122,7 +119,7 @@
                 </div>
                 <h4 class="title" >Repair & Maintanance</h3>
             </a>
-            <a href="#" class="services">
+            <a href="#" class="services" >
                 <div class="image">
                     <div class="hover"> 
                         <p> Our Projects </p>
@@ -130,7 +127,7 @@
                 </div>     
                 <h4 class="title" >Custom Service</h3>
             </a>
-            <a href="#" class="services">
+            <a href="#" class="services" >
                 <div class="image">
                     <div class="hover"> 
                         <p> Book Now </p>
@@ -138,7 +135,7 @@
                 </div>     
                 <h4 class="title" >Engine Rebuildings</h3>
             </a>
-            <a href="#" class="services">
+            <a href="#" class="services" >
                 <div class="image">
                     <div class="hover"> 
                         <p> View Detail </p>
@@ -159,20 +156,20 @@
     <!-- Products -->
         <div class="main-block">
             <h3>Products</h3>
-            <div class="service-box">
-                <a href="products.html" class="products">
+            <div class="service-box product">
+                <a href="products.html" class="products"  >
                     <div class="product-image">
                         <div class="hover"> </div> 
                     </div>
                     <p> Helmets </p>
                 </a>
-                <a href="products.html" class="products">
+                <a href="products.html" class="products"  >
                     <div class="product-image">
                         <div class="hover"></div>
                     </div>     
                     <p> jackets </p>
                 </a>
-                <a href="products.html" class="products">
+                <a href="products.html" class="products"  >
                     <div class="product-image">
                         <div class="hover"> </div>
                     </div>     
@@ -182,10 +179,8 @@
         </div>
     </div>
     <!-- contact  -->
-    <div class="contact">
-        
+    <div class="contact"> 
         <div class="content">
-            
             <form action="registration.php" method="post" class="forms">
                 <h3>Contact</h3>
                 <label for="name" class="labels">Leave message here</label>
@@ -206,7 +201,7 @@
                     <p> © 2021 Terminal. All right reserved. </p>
                     <a href="#">Terms & conditions     Privacy policy</a>
                 </div>
-                <div>  
+                <div class="footer-icons">  
                     <a href="#" class="icon"><img src="images/icons/facebook.svg" alt="facebok"></a>
                     <a href="#" class="icon"><img src="images/icons/instagram.svg" alt="instagram"></a>
                     <a href="#" class="icon"><img src="images/icons/mobile.svg" alt="mobile"></a>
@@ -219,8 +214,17 @@
             </div>
         </footer>
     </div>
-</div>    
+</div> 
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="java/app.js" defer></script>    
+<script src="javascript/app.js" defer></script>   
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 400 ,
+        duration: 1500 ,
+});
+</script>
 </body>
 </html>

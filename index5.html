@@ -15,10 +15,7 @@
      <!-- css -------------------------->
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/font.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link type="text/css" rel="stylesheet" href="css/lightGallery.css" />                  
-    <script src="java/lightGallery.js"></script>
+    <link rel="stylesheet" href="styles/main.css">              
     <title>Project</title>
 </head>
 <body>
@@ -47,39 +44,19 @@
             <div class="burger-icon">
                 <div class="menu">
                     <img src="images/icons/Group 47.png" alt="burger">
-                    <div class="mobile-nav">
+                    <div class="mobile-nav" id="nav">
                         <ul>
                             <li><a  class="navbar-li" href="index.html">Homepage</a></li>
                             <li><a  class="navbar-li" href="index2.html">Products</a></li>
                             <li><a  class="navbar-li" href="index3.html">About Us</a></li>
                         </ul>
-                        <div class="authentication">
+                        <div class="authentication mobile-authentication">
                             <img src="images/icons/user-circle-solid.svg" alt="personalPage">
                             <img src="images/icons/shopping-cart.svg" alt="shopping-cart">
                         </div> 
                     </div>
                 </div>
             </div>
-            <!-- <div id="burgerIcon" onclick="burgerMenu()">
-                <img src="images/icons/Group 47.png" alt="burger">
-                <div class="burger-menu">
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">Homepage</a></li>
-                            <li><a href="index2.html">Products</a></li>
-                            <li><a href="index3.html">About Us</a></li>
-                        </ul>
-                    </nav>
-                    <div class="authentication">
-                        <img src="images/icons/user-circle-solid.svg" alt="personalPage">
-                        <img src="images/icons/shopping-cart.svg" alt="shopping-cart">
-                    </div>
-                </div>
-            </div>
-            <div class="authentication">
-                <img src="images/icons/user-circle-solid.svg" alt="personalPage">
-                <img src="images/icons/shopping-cart.svg" alt="shopping-cart">
-            </div> -->
         </header>
         <div class="main-content">
             <div class="image-side">
@@ -104,73 +81,83 @@
                 <h4 class="delivery"> Free Delivery Over 40$ <img src="images/icons/shipping-fast-solid.svg" alt=""> </h4>
             </div>
         </div>
-        <div class="related-products">
-            <div class="main-block">
-                <h3>Related Proudcts</h3>
-                    <ul id="autoWidth" class="cs-hidden">
-                        <li class="item-a"> <a href="about.html" class="services">
-                            <div class="image">
-                                <div class="hover"> 
-                                    <p> Book Now </p>
-                                </div> 
-                            </div>
-                            <h4 class="title" >Repair & Maintanance</h3>
-                        </a> 
-                        </li>
-                        <li class="item-b">
-                            <a href="about.html" class="services">
-                                <div class="image">
-                                    <div class="hover"> 
-                                        <p> Book Now </p>
-                                    </div> 
-                                </div>
-                                <h4 class="title" >Repair & Maintanance</h3>
-                            </a>
-                        </li>
-                        <li class="item-c">
-                            <a href="about.html" class="services">
-                                <div class="image">
-                                    <div class="hover"> 
-                                        <p> Book Now </p>
-                                    </div> 
-                                </div>
-                                <h4 class="title" >Repair & Maintanance</h3>
-                            </a>
-                        </li>
-                        <li class="item-d">
-                            <a href="about.html" class="services">
-                                <div class="image">
-                                    <div class="hover"> 
-                                        <p> Book Now </p>
-                                    </div> 
-                                </div>
-                                <h4 class="title" >Repair & Maintanance</h3>
-                            </a>
-                        </li>
-                        <li class="item-e">
-                            <a href="about.html" class="services">
-                                <div class="image">
-                                    <div class="hover"> 
-                                        <p> Book Now </p>
-                                    </div> 
-                                </div>
-                                <h4 class="title" >Repair & Maintanance</h3>
-                            </a>
-                        </li>
-                      </ul>  
-                </div>
+        <!-- best sellers -->
+        <div class="main-block related-products">
+            <h3>RELATED PRODUCTS</h3>
+            <div class="product-scroll" >
+                <a href="about.html" class="services">
+                    <div class="helmets">
+                        <div class="hover"> 
+                            <p> View Detail </p>
+                        </div> 
+                    </div>
+                    <h4 class="title" >MODEL 1</h3>
+                </a>
+                <a href="#" class="services" >
+                    <div class="helmets">
+                        <div class="hover"> 
+                            <p> View Detail </p>
+                        </div>
+                    </div>     
+                    <h4 class="title" >MODEL 2</h3>
+                </a>
+                <a href="#" class="services" >
+                    <div class="helmets">
+                        <div class="hover"> 
+                            <p> View Detail </p>
+                        </div>
+                    </div>     
+                    <h4 class="title" >MODEL 3</h3>
+                </a>
+                <a href="#" class="services" >
+                    <div class="helmets">
+                        <div class="hover"> 
+                            <p> View Detail </p>
+                        </div>
+                    </div>     
+                    <h4 class="title" >MODEL 4</h3>
+                </a>
+                <a href="#" class="services" >
+                    <div class="helmets">
+                        <div class="hover"> 
+                            <p> View Detail </p>
+                        </div>
+                    </div>     
+                    <h4 class="title" >MODEL 5</h3>
+                </a>
+                <a href="#" class="services" >
+                    <div class="helmets">
+                        <div class="hover"> 
+                            <p> View Detail </p>
+                        </div>
+                    </div>     
+                    <h4 class="title" >MODEL 6</h3>
+                </a>
+                <a href="#" class="services" >
+                    <div class="helmets">
+                        <div class="hover"> 
+                            <p> View Detail </p>
+                        </div>
+                    </div>     
+                    <h4 class="title" >MODEL 7</h3>
+                </a>
+                <a href="#" class="services" >
+                    <div class="helmets">
+                        <div class="hover"> 
+                            <p> View Detail </p>
+                        </div>
+                    </div>     
+                    <h4 class="title" >MODEL 8</h3>
+                </a>
             </div>
         </div>
-
-
-
         <footer>
             <div class="footerDiv">
                 <div> 
                     <p> © 2021 Terminal. All right reserved. </p>
                     <a href="#">Terms & conditions     Privacy policy</a>
                 </div>
-                <div>  
+                <div class="footer-icons">  
                     <a href="#" class="icon"><img src="images/icons/facebook.svg" alt="facebok"></a>
                     <a href="#" class="icon"><img src="images/icons/instagram.svg" alt="instagram"></a>
                     <a href="#" class="icon"><img src="images/icons/mobile.svg" alt="mobile"></a>
@@ -185,7 +172,7 @@
 
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="java/app.js" defer></script>
+    <script src="javascript/app.js" defer></script>
     
 </body>
 </html>

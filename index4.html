@@ -13,7 +13,6 @@
     <meta property="og:title"              content="Motorcycle service" />
     <meta property="og:description"        content="Final Project" />
     <meta property="og:image"              content="images/icons/" />
-    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/font.css">
     <link rel="stylesheet" href="styles/main.css">
@@ -42,21 +41,22 @@
             <img src="images/icons/user-circle-solid.svg" alt="personalPage">
             <img src="images/icons/shopping-cart.svg" alt="shopping-cart">
         </div> 
-        <!-- <div class="burger-icon">
-            <div class="menu">
-                <img src="images/icons/Group 47.png" alt="burger">
-                <div class="mobile-nav">
-                    <ul>
-                        <li><a  class="navbar-li" href="index.html">Homepage</a></li>
-                        <li><a  class="navbar-li" href="index2.html">Products</a></li>
-                        <li><a  class="navbar-li" href="index3.html">About Us</a></li>
-                    </ul>
-                    <div class="authentication">
-                        <img src="images/icons/user-circle-solid.svg" alt="personalPage">
-                        <img src="images/icons/shopping-cart.svg" alt="shopping-cart">
-                    </div> 
-                </div>
-            </div> -->
+        <div class="burger-icon" id="burger">
+            <img src="images/icons/Group 47.png" alt="burger"> 
+        </div>    
+            <div class="mobile-nav" id="nav">
+                <img id="x" src="images/icons/Group 26.png" alt="x">
+                <ul>
+                    <li><a  class="navbar-li" href="index.html">Homepage</a></li>
+                    <li><a  class="navbar-li" href="index2.html">Products</a></li>
+                    <li><a  class="navbar-li" href="index3.html">About Us</a></li>
+                </ul>
+                <div class="authentication mobile-authentication">
+                    <img src="images/icons/user-circle-solid.svg" alt="personalPage">
+                    <img src="images/icons/shopping-cart.svg" alt="shopping-cart">
+                </div> 
+            </div>
+        </div>
     </header>
     <div class="wrapper">
         <div class="categories-filter">
@@ -66,12 +66,6 @@
             <p>Gloves</p>
         </div>
         <div class="right-block">
-            <div class="price-filter">
-                <h4>Sort by</h4>
-                <div class="prices">
-                    <p>low to high</p>
-                </div>
-            </div>
             <div class="product-list">
                 <a href="index5.html" class="item">
                     <img src="images/1.jpg" alt="helmet" class="photo">
@@ -139,7 +133,7 @@
                 <p> © 2021 Terminal. All right reserved. </p>
                 <a href="#">Terms & conditions     Privacy policy</a>
             </div>
-            <div>  
+            <div class="footer-icons">  
                 <a href="#" class="icon"><img src="images/icons/facebook.svg" alt="facebok"></a>
                 <a href="#" class="icon"><img src="images/icons/instagram.svg" alt="instagram"></a>
                 <a href="#" class="icon"><img src="images/icons/mobile.svg" alt="mobile"></a>
@@ -149,6 +143,6 @@
     </footer>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="java/app.js" defer></script>
+<script src="javascript/app.js" defer></script>
 </body>
 </html>
