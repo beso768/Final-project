@@ -159,11 +159,10 @@ nav a:hover{
     flex-direction: column;
     color: white;
     position: absolute;
-    top: 26%;
+    top: 14%;
     backdrop-filter: brightness(0.6);
     width: 100%;
     border-top: 2px solid #ffffff8f;
-    border-bottom: 2px solid #ffffff8f;
 }
 .banner-text h2 {
     font-size: 100px;
@@ -1003,6 +1002,16 @@ span{
     }
     .dealers{
         display: none;
+    }
+    .mySlides{
+        height: 500px;
+    }
+    .banner-text{
+        top: 14%;
+    }
+    .next , .prev{
+        top: 200px;
+        font-size: 22px;
     }
     
     
